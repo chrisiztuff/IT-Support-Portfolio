@@ -27,54 +27,36 @@ Windows showed “Welcome to the corp.515support.com domain.” This confirmed t
 After PC11 joined the domain, a domain account was used to sign in. Jaime is a test user created to represent a regular employee in the company. This demonstrates that employees can sign in to company computers using their domain accounts instead of needing separate accounts for every computer.
 <img width="1280" height="712" alt="05_04-30_domain-user-sign-in" src="https://github.com/user-attachments/assets/13727907-2f87-47bd-9f8e-51650212bf89" />
 
-
-
-
-Clarify the administrator verification step
-Step 6: Opening the network checks 
+## Step 6: Opening the network checks 
 The lab moved to checking network connections. PowerShell was used to run network commands.
 Why this matters: PowerShell is a place to type commands that check or change computer settings.
 ![Step 6: Opening the network checks](screenshots/06_06-30_powershell-connectivity.jpg)
 
-Step 7: Reading connection results 
+## Step 7: Reading connection results 
 The results of a network check were reviewed to see whether the computer could reach the right network services.
 Why this matters: A computer must be able to reach the domain server for many domain features to work.
 ![Step 7: Reading connection results](screenshots/07_07-30_network-test-results.jpg)
 
-Step 8: Checking DNS 
-The lab included DNS checks while investigating network connections. DNS helps PC11 find servers by name.
-Why this matters: DNS works like a contact list: it helps a computer find the right address.
-![Step 8: Checking DNS](screenshots/09_12-00_dns-troubleshooting.jpg)
 
-Step 9: Looking at network settings 
-The network settings were checked as part of finding possible connection problems.
-Why this matters: Wrong network settings can stop a computer from reaching the server.
-![Step 9: Looking at network settings](screenshots/10_15-00_network-configuration.jpg)
+## Step 8: Testing Network Connectivity
 
-Step 10: Running more network tests 
-More command-line checks were used to look at the network and its results.
-Why this matters: Testing one step at a time makes problems easier to find.
-![Step 10: Running more network tests](screenshots/11_18-00_diagnostic-commands.jpg)
+PowerShell was used to ping PC10 and MS10.
+Both devices responded successfully with 0% packet loss. This confirms that PC11 can communicate with other computers and servers on the network.
+<img width="1062" height="687" alt="image" src="https://github.com/user-attachments/assets/c620d103-c721-47e5-b633-e0e765d79a7f" />
 
-Step 11: Reviewing the test output 
-The command results were reviewed before moving to account management.
-Why this matters: IT support workers check the result instead of assuming a command worked.
-![Step 11: Reviewing the test output](screenshots/12_20-30_network-command-output.jpg)
 
-Step 12: Opening Active Directory 
+## Step 9 : Opening Active Directory 
 On the server side of the lab, Active Directory Users and Computers was opened. This is where domain accounts are managed.
-Why this matters: This tool lets IT staff manage accounts from one place.
-![Step 12: Opening Active Directory](screenshots/14_24-30_ad-users-computers.jpg)
+This tool lets IT staff manage accounts from one place.
+<img width="1280" height="712" alt="14_24-30_ad-users-computers" src="https://github.com/user-attachments/assets/2b558254-59a5-4697-9367-8a63259ec984" />
 
-Step 13: Creating Ronnie 
+##Step 13: Creating Ronnie 
 A new user named Ronnie was created for the `corp.515support.com` domain. The user sign-in name was `ronnie`.
-Why this matters: A user account gives a person their own work sign-in.
-![Step 13: Creating Ronnie](screenshots/15_26-30_new-ronnie-user.jpg)
-
-Step 14: Putting Ronnie in Nonadmins 
-The Ronnie account was placed in the `Nonadmins` organizational unit (OU).
-Why this matters: An OU is like a folder that helps keep company accounts organized.
-![Step 14: Putting Ronnie in Nonadmins](screenshots/16_27-30_nonadmins-ou.jpg)
+A user account gives a person their own work sign-in.
+<img width="1498" height="663" alt="image" src="https://github.com/user-attachments/assets/139040da-c20d-4c40-a24e-ff6f5b0a1af4" /> 
+The Ronnie account was created in the `Nonadmins` organizational unit (OU).
+An OU is like a folder that helps keep company accounts organized.
+<img width="1280" height="712" alt="16_27-30_nonadmins-ou" src="https://github.com/user-attachments/assets/e6c02253-1fed-4ef2-a63e-67ba39ad274a" />
 
 Step 15: Setting Ronnie’s account options 
 The account options were set to match the training lab. The lab called for Password never expires and for Ronnie not to change the password at the next sign-in.

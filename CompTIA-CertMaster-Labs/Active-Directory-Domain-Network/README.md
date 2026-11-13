@@ -27,43 +27,37 @@ Windows showed “Welcome to the corp.515support.com domain.” This confirmed t
 After PC11 joined the domain, a domain account was used to sign in. Jaime is a test user created to represent a regular employee in the company. This demonstrates that employees can sign in to company computers using their domain accounts instead of needing separate accounts for every computer.
 <img width="1280" height="712" alt="05_04-30_domain-user-sign-in" src="https://github.com/user-attachments/assets/13727907-2f87-47bd-9f8e-51650212bf89" />
 
-## Step 6: Opening the network checks 
-The lab moved to checking network connections. PowerShell was used to run network commands.
-Why this matters: PowerShell is a place to type commands that check or change computer settings.
-![Step 6: Opening the network checks](screenshots/06_06-30_powershell-connectivity.jpg)
-
-## Step 7: Reading connection results 
-The results of a network check were reviewed to see whether the computer could reach the right network services.
-Why this matters: A computer must be able to reach the domain server for many domain features to work.
-![Step 7: Reading connection results](screenshots/07_07-30_network-test-results.jpg)
+## Step 6 Checking PC11 Network Information
+PowerShell was used to run the hostname and ipconfig commands.
+The hostname command confirmed the computer name was PC11. The ipconfig command displayed its IP address, subnet mask, default gateway, and DNS suffix (corp.515support.com).This verifies PC11's network information before testing its connection to other computers and servers.
+<img width="1280" height="712" alt="07_07-30_network-test-results" src="https://github.com/user-attachments/assets/48a19afe-adb9-488d-a535-e4b3484afbb5" />
 
 
-## Step 8: Testing Network Connectivity
+## Step 7: Testing Network Connectivity
 
 PowerShell was used to ping PC10 and MS10.
 Both devices responded successfully with 0% packet loss. This confirms that PC11 can communicate with other computers and servers on the network.
 <img width="1062" height="687" alt="image" src="https://github.com/user-attachments/assets/c620d103-c721-47e5-b633-e0e765d79a7f" />
 
 
-## Step 9 : Opening Active Directory 
+## Step 8 : Opening Active Directory 
 On the server side of the lab, Active Directory Users and Computers was opened. This is where domain accounts are managed.
 This tool lets IT staff manage accounts from one place.
 <img width="1280" height="712" alt="14_24-30_ad-users-computers" src="https://github.com/user-attachments/assets/2b558254-59a5-4697-9367-8a63259ec984" />
 
-##Step 13: Creating Ronnie 
-A new user named Ronnie was created for the `corp.515support.com` domain. The user sign-in name was `ronnie`.
+## Step 9: Creating Ronnie 
+A new user was created for the `corp.515support.com` domain. The account was created in the `Nonadmins` organizational unit (OU). An OU is like a folder that helps keep company accounts organized. <img width="1280" height="712" alt="16_27-30_nonadmins-ou" src="https://github.com/user-attachments/assets/e6c02253-1fed-4ef2-a63e-67ba39ad274a" />
+
+the user sign-in name was `ronnie`.
 A user account gives a person their own work sign-in.
 <img width="1498" height="663" alt="image" src="https://github.com/user-attachments/assets/139040da-c20d-4c40-a24e-ff6f5b0a1af4" /> 
-The Ronnie account was created in the `Nonadmins` organizational unit (OU).
-An OU is like a folder that helps keep company accounts organized.
-<img width="1280" height="712" alt="16_27-30_nonadmins-ou" src="https://github.com/user-attachments/assets/e6c02253-1fed-4ef2-a63e-67ba39ad274a" />
 
-Step 15: Setting Ronnie’s account options 
+## Step 10 : Setting Ronnie’s account options 
 The account options were set to match the training lab. The lab called for Password never expires and for Ronnie not to change the password at the next sign-in.
-Why this matters: These are lab settings, not general advice for real company passwords.
-![Step 15: Setting Ronnie’s account options](screenshots/17_28-30_account-properties.jpg)
+These are lab settings, not general advice for real company passwords.
+<img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/27d816f7-c149-4450-8642-8b739fbd1eca" />
 
-Step 16: Starting the sign-in script task 
+Step 11: Starting the sign-in script task 
 The next part of the lab worked with settings and files used when a user signs in.
 Why this matters: A sign-in script is a small set of commands that can run automatically at sign-in.
 ![Step 16: Starting the sign-in script task](screenshots/18_29-00_login-script-configuration.jpg)

@@ -68,7 +68,7 @@ Security groups make it easier to manage permissions. Instead of giving each emp
 
 
 
-## Step 11: Starting the sign-in script task 
+## Step 12: Starting the sign-in script task 
 The next part of the lab worked with settings and files used when a user signs in.
 A sign-in script is a small set of commands that can run automatically at sign-in.
 A script was opened in a text editor and worked on as part of the sign-in setup.
@@ -86,6 +86,27 @@ This script 'tickets.vbs' was created using Notepad++. The script is designed to
 | `BASEURL` and `URL` | Tell the shortcut which website to open |
 | `IconFile` and `IconIndex` | Choose the shortcut's icon |
 | `Close` | Saves and closes the file |
+## Step 13: Saving the VBScript File
+The script was saved to the \\DC10\netlogon shared folder on the domain controller.
+ The NETLOGON folder allows domain computers to access the script so it can run automatically when assigned users sign in.
+The script was saved as 'tickets.vbs' . 
+The .vbs extension identifies the file as a VBScript that Windows can execute. Saving the script allows it to be executed to automatically create the IT support website shortcut on the desktop.
+<img width="1321" height="691" alt="image" src="https://github.com/user-attachments/assets/3458c387-94f5-4485-ac90-2b90a3025aca" />
+
+
+## step 14: Configuring a Logon Script for Domain Users
+In Active Directory Users and Computers, multiple test user accounts were selected from the Nonadmins Organizational Unit (OU).
+The Properties window was opened for the selected users. Under the Profile tab, tickets.vbs was entered in the Logon script field. This allows the script to run automatically when the assigned domain users sign in, creating a shortcut to the company's IT support website on their desktop. 
+<img width="1445" height="698" alt="image" src="https://github.com/user-attachments/assets/e76065a6-9bf2-456e-890b-a18f84fb7e11" />
+<img width="1457" height="649" alt="image" src="https://github.com/user-attachments/assets/1615e2f0-5256-43fa-8263-1e1cb7e80712" />
+
+
+## Step 15 Testing the Logon Script on PC11
+PC11 was signed in using Ronnie's domain account. Ronnie is a test user created to represent a regular employee.
+After signing in, the tickets.vbs logon script automatically created the Tickets shortcut on the desktop.
+This confirms that the logon script works and can automatically provide employees with the company's IT support website shortcut when they sign in.
+<img width="1487" height="771" alt="image" src="https://github.com/user-attachments/assets/54595af0-554e-41d6-aebe-bb84a23f0e66" />
+
 
 
 Step 18: Checking user settings 

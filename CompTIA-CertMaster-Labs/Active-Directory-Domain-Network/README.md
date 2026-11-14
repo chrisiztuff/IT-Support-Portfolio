@@ -7,18 +7,34 @@ In this guided lab, I practiced connecting a Windows computer to a company domai
 A domain is a way for a company to manage work computers and employee accounts together. The screenshots below come from my recorded training lab. 
 
 ## Step 1: Starting the lab 
-The lab began on the Windows computers used for this exercise. The administrator account was used for tasks that need extra permission. An administrator is an account that can change important computer settings.
+The lab began on the Windows computers used for this exercise. The administrator account was used for tasks that need extra permission. An administrator is an account that can change important computer settings. 
+
+<details>
+<summary>View Image</summary>
+
 <img width="1300" height="708" alt="image" src="https://github.com/user-attachments/assets/0bfeca1a-7360-4c76-8bb2-92da52f06d0d" />
+
+</details>
+
 
 
 ## Step 2: Checking PC11
-On PC11, the computer name and domain settings were opened. The computer was named `PC11`. Every computer has a name so it can be found on a network.
+
+Step 1: Joining PC11 to the Active Directory Domain
+On PC11, the sysdm.cpl command was entered using Run to open System Properties.
+Under Computer Name → Change, the Domain option was selected, and corp.515support.com was entered.
+The domain administrator's credentials were used to authorize PC11 to join the domain.
+Joining PC11 to the domain allows it to be managed through Active Directory and lets domain users sign in using their work accounts.
+<details>
+<summary>View Image</summary>
 <img width="1279" height="738" alt="image" src="https://github.com/user-attachments/assets/7b7a6ba6-e5d9-49a9-90dc-141fbce94b26" />
+</details>
 
 ## Step 3: Entering the domain administrator account 
 PC11 was set to join `corp.515support.com`. Windows asked for an account allowed to join the domain. The account `515support\administrator` was entered, along with the lab password.
 This check stops just anyone from adding computers to the company network.
 <img width="908" alt="Domain Controller Setup" src="https://github.com/user-attachments/assets/be632264-46a4-4545-874d-a2685870a751" />
+
 ## Step 4: Confirming PC11 joined the domain 
 Windows showed “Welcome to the corp.515support.com domain.” This confirmed that PC11 joined the domain successfully. A domain lets a company manage many work computers and accounts together.
 <img width="913" height="525" alt="image" src="https://github.com/user-attachments/assets/1cdb491f-90e1-4d1f-b84b-59c3a192fce3" />

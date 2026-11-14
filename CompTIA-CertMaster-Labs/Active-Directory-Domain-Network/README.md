@@ -57,15 +57,36 @@ The account options were set to match the training lab. The lab called for Passw
 These are lab settings, not general advice for real company passwords.
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/27d816f7-c149-4450-8642-8b739fbd1eca" />
 
-Step 11: Starting the sign-in script task 
-The next part of the lab worked with settings and files used when a user signs in.
-Why this matters: A sign-in script is a small set of commands that can run automatically at sign-in.
-![Step 16: Starting the sign-in script task](screenshots/18_29-00_login-script-configuration.jpg)
 
-Step 17: Working on the script 
+## Step 11 Adding a User to a Security Group
+
+In Active Directory Users and Computers, the test user 'ronnie' was selected to be added to the sec-glo-sales security group.
+This group represents employees in the Sales department.
+Security groups make it easier to manage permissions. Instead of giving each employee access separately, permissions can be assigned to a group.
+<img width="1674" height="736" alt="image" src="https://github.com/user-attachments/assets/684a2d85-258f-4550-bd2f-4f44f48522c2" />
+<img width="1256" height="698" alt="image" src="https://github.com/user-attachments/assets/9362f651-4403-4965-93b8-604fcf7d1588" />
+
+
+
+## Step 11: Starting the sign-in script task 
+The next part of the lab worked with settings and files used when a user signs in.
+A sign-in script is a small set of commands that can run automatically at sign-in.
 A script was opened in a text editor and worked on as part of the sign-in setup.
-Why this matters: A script can save time by doing the same task for many users.
-![Step 17: Working on the script](screenshots/19_30-30_script-in-editor.jpg)
+This script 'tickets.vbs' was created using Notepad++. The script is designed to create a desktop shortcut called Tickets that opens the company's IT support website.
+ Scripts can automate repetitive tasks. Instead of manually creating shortcuts on every computer, administrators can use scripts to make the process easier.
+<img width="1280" height="712" alt="19_30-30_script-in-editor" src="https://github.com/user-attachments/assets/9570cedd-a40a-4d59-b594-ef8658d9ab6c" />
+
+| Code | Explanation |
+|------|--------------------|
+| `CreateObject("WScript.Shell")` | Gives the script access to Windows features |
+| `SpecialFolders("Desktop")` | Finds the desktop folder |
+| `sTarget` | Stores the support website address |
+| `CreateObject("Scripting.FileSystemObject")` | Allows the script to create files |
+| `CreateTextFile` | Creates a file named `Tickets.url` |
+| `BASEURL` and `URL` | Tell the shortcut which website to open |
+| `IconFile` and `IconIndex` | Choose the shortcut's icon |
+| `Close` | Saves and closes the file |
+
 
 Step 18: Checking user settings 
 The lab returned to user settings to connect the account setup with the sign-in task.

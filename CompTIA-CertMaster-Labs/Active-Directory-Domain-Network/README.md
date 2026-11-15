@@ -33,40 +33,66 @@ Joining PC11 to the domain allows it to be managed through Active Directory and 
 ## Step 3: Entering the domain administrator account 
 PC11 was set to join `corp.515support.com`. Windows asked for an account allowed to join the domain. The account `515support\administrator` was entered, along with the lab password.
 This check stops just anyone from adding computers to the company network.
+<details>
+<summary>View Image</summary>
 <img width="908" alt="Domain Controller Setup" src="https://github.com/user-attachments/assets/be632264-46a4-4545-874d-a2685870a751" />
+</details>
 
 ## Step 4: Confirming PC11 joined the domain 
 Windows showed “Welcome to the corp.515support.com domain.” This confirmed that PC11 joined the domain successfully. A domain lets a company manage many work computers and accounts together.
+<details>
+<summary>View Image</summary>
 <img width="913" height="525" alt="image" src="https://github.com/user-attachments/assets/1cdb491f-90e1-4d1f-b84b-59c3a192fce3" />
+</details>
 
 ## Step 5: Signing in after joining 
 After PC11 joined the domain, a domain account was used to sign in. Jaime is a test user created to represent a regular employee in the company. This demonstrates that employees can sign in to company computers using their domain accounts instead of needing separate accounts for every computer.
+<details>
+<summary>View Image</summary>
 <img width="1280" height="712" alt="05_04-30_domain-user-sign-in" src="https://github.com/user-attachments/assets/13727907-2f87-47bd-9f8e-51650212bf89" />
+</details>
 
 ## Step 6 Checking PC11 Network Information
 PowerShell was used to run the hostname and ipconfig commands.
 The hostname command confirmed the computer name was PC11. The ipconfig command displayed its IP address, subnet mask, default gateway, and DNS suffix (corp.515support.com).This verifies PC11's network information before testing its connection to other computers and servers.
+<details>
+<summary>View Image</summary>
 <img width="1280" height="712" alt="07_07-30_network-test-results" src="https://github.com/user-attachments/assets/48a19afe-adb9-488d-a535-e4b3484afbb5" />
-
+</details>
 
 ## Step 7: Testing Network Connectivity
 
 PowerShell was used to ping PC10 and MS10.
 Both devices responded successfully with 0% packet loss. This confirms that PC11 can communicate with other computers and servers on the network.
+<details>
+<summary>View Image</summary>
 <img width="1062" height="687" alt="image" src="https://github.com/user-attachments/assets/c620d103-c721-47e5-b633-e0e765d79a7f" />
-
+</details>
 
 ## Step 8 : Opening Active Directory (On device 'DC10')
 On the server side of the lab, Active Directory Users and Computers was opened, on Device DC10. This is where domain accounts are managed.
 This tool lets IT staff manage accounts from one place.
+<details>
+<summary>View Image</summary>
 <img width="1280" height="712" alt="14_24-30_ad-users-computers" src="https://github.com/user-attachments/assets/2b558254-59a5-4697-9367-8a63259ec984" />
+</details>
 
-## Step 9: Creating Ronnie 
-A new user was created for the `corp.515support.com` domain. The account was created in the `Nonadmins` organizational unit (OU). An OU is like a folder that helps keep company accounts organized. <img width="1280" height="712" alt="16_27-30_nonadmins-ou" src="https://github.com/user-attachments/assets/e6c02253-1fed-4ef2-a63e-67ba39ad274a" />
+ ## Step 9: Creating 'Ronnie' 
+A new user was created for the `corp.515support.com` domain. The account was created in the `Nonadmins` organizational unit (OU). An OU is like a folder that helps keep company accounts organized. 
 
-the user sign-in name was `ronnie`.
-A user account gives a person their own work sign-in.
+<details>
+<summary>View Image</summary>
+<img width="1280" height="712" alt="16_27-30_nonadmins-ou" src="https://github.com/user-attachments/assets/e6c02253-1fed-4ef2-a63e-67ba39ad274a" />
+</details>
+
+The user sign-in name was `ronnie`. A user account gives a person their own work sign-in.
+
+<details>
+<summary>View Image</summary>
 <img width="1498" height="663" alt="image" src="https://github.com/user-attachments/assets/139040da-c20d-4c40-a24e-ff6f5b0a1af4" /> 
+</details>
+
+
 
 ## Step 10 : Setting Ronnie’s account options 
 The account options were set to match the training lab. The lab called for Password never expires and for Ronnie not to change the password at the next sign-in.

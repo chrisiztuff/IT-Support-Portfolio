@@ -126,8 +126,10 @@ A sign-in script is a small set of commands that can run automatically at sign-i
 A script was opened in a text editor and worked on as part of the sign-in setup.
 This script 'tickets.vbs' was created using Notepad++. The script is designed to create a desktop shortcut called Tickets that opens the company's IT support website.
  Scripts can automate repetitive tasks. Instead of manually creating shortcuts on every computer, administrators can use scripts to make the process easier.
+<details>
+<summary>View Image</summary>
 <img width="1280" height="712" alt="19_30-30_script-in-editor" src="https://github.com/user-attachments/assets/9570cedd-a40a-4d59-b594-ef8658d9ab6c" />
-
+</details>
 | Code | Explanation |
 |------|--------------------|
 | `CreateObject("WScript.Shell")` | Gives the script access to Windows features |
@@ -144,20 +146,38 @@ The script was saved to the \\DC10\netlogon shared folder on the domain controll
  The NETLOGON folder allows domain computers to access the script so it can run automatically when assigned users sign in.
 The script was saved as 'tickets.vbs' . 
 The .vbs extension identifies the file as a VBScript that Windows can execute. Saving the script allows it to be executed to automatically create the IT support website shortcut on the desktop.
+
+<details>
+<summary>View Image</summary>
 <img width="1321" height="691" alt="image" src="https://github.com/user-attachments/assets/3458c387-94f5-4485-ac90-2b90a3025aca" />
+</details>
 
 ## Step 14: Configuring a Logon Script for Domain Users
 In Active Directory Users and Computers, multiple test user accounts were selected from the Nonadmins Organizational Unit (OU).
 The Properties window was opened for the selected users. Under the Profile tab, tickets.vbs was entered in the Logon script field. This allows the script to run automatically when the assigned domain users sign in, creating a shortcut to the company's IT support website on their desktop. 
+
+<details>
+<summary>View Image</summary>
 <img width="1445" height="698" alt="image" src="https://github.com/user-attachments/assets/e76065a6-9bf2-456e-890b-a18f84fb7e11" />
+</details>
+
+<details>
+<summary>View Image</summary>
 <img width="1457" height="649" alt="image" src="https://github.com/user-attachments/assets/1615e2f0-5256-43fa-8263-1e1cb7e80712" />
+</details>
+
 
 
 ## Step 15: Testing the Logon Script on PC11
 PC11 was signed in using Ronnie's domain account. Ronnie is a test user created to represent a regular employee.
 After signing in, the tickets.vbs logon script automatically created the Tickets shortcut on the desktop.
 This confirms that the logon script works and can automatically provide employees with the company's IT support website shortcut when they sign in.
+
+
+<details>
+<summary>View Image</summary>
 <img width="1487" height="771" alt="image" src="https://github.com/user-attachments/assets/54595af0-554e-41d6-aebe-bb84a23f0e66" />
+</details>
 
 
 
@@ -166,10 +186,14 @@ This confirms that the logon script works and can automatically provide employee
 In Group Policy Management, a new Group Policy Object (GPO) named 515support Folder Redirection Policy was created and linked to the Nonadmins Organizational Unit (OU).
 Under User Configuration → Policies → Windows Settings → Folder Redirection, the Documents folder was configured to redirect to the shared network location \\MS10\ROAMING.
 Folder Redirection allows employees' Documents folders to be stored on a central server instead of only on their local computers. This makes files easier to access when employees use different company computers.
-
+<details>
+<summary>View Image</summary>
 <img width="1524" height="672" alt="image" src="https://github.com/user-attachments/assets/6bdb8f2b-404e-4133-83ae-ea98e509edd7" />
+</details>
+<details>
+<summary>View Image</summary>
 <img width="1592" height="656" alt="image" src="https://github.com/user-attachments/assets/62f20a92-0c44-4af2-9204-57001ddde276" />
-
+</details>
 
 
 

@@ -97,7 +97,10 @@ The user sign-in name was `ronnie`. A user account gives a person their own work
 ## Step 10 : Setting Ronnie’s account options 
 The account options were set to match the training lab. The lab called for Password never expires and for Ronnie not to change the password at the next sign-in.
 These are lab settings, not general advice for real company passwords.
+<details>
+<summary>View Image</summary>
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/27d816f7-c149-4450-8642-8b739fbd1eca" />
+</details>
 
 
 ## Step 11 Adding a User to a Security Group
@@ -105,8 +108,17 @@ These are lab settings, not general advice for real company passwords.
 In Active Directory Users and Computers, the test user 'ronnie' was selected to be added to the sec-glo-sales security group.
 This group represents employees in the Sales department.
 Security groups make it easier to manage permissions. Instead of giving each employee access separately, permissions can be assigned to a group.
+
+
+<details>
+<summary>View Image</summary>
 <img width="1674" height="736" alt="image" src="https://github.com/user-attachments/assets/684a2d85-258f-4550-bd2f-4f44f48522c2" />
+</details>
+
+<details>
+<summary>View Image</summary>
 <img width="1256" height="698" alt="image" src="https://github.com/user-attachments/assets/9362f651-4403-4965-93b8-604fcf7d1588" />
+</details>
 
 ## Step 12: Starting the sign-in script task 
 The next part of the lab worked with settings and files used when a user signs in.

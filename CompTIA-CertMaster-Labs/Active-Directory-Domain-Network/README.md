@@ -247,7 +247,7 @@ This confirmed that the ROAMING folder was configured as a network share.
 
 Configuring NTFS Security Permissions on MS10
 
-Step 1: Opening the ROAMING Folder Security Settings and Disabling Permission Inheritance
+## Step 22: Opening the ROAMING Folder Security Settings and Disabling Permission Inheritance
 
 On MS10, the C:\ROAMING folder's Properties window was opened.
 The Security tab was selected, followed by Advanced.
@@ -268,7 +268,7 @@ Disabling inheritance allows the ROAMING folder to have its own security permiss
 <img width="1498" height="726" alt="image" src="https://github.com/user-attachments/assets/1d21f3d8-91c6-4fa9-91f8-e6bee635bf4a" />
 </details>
 
-Step 3: Removing the Users Group
+## Step 23: Removing the Users Group
 
 In the permission entries list, each Users (MS10\Users) entry was selected and removed.
 
@@ -278,10 +278,11 @@ This helped prevent the general local Users group from keeping its previous acce
 
 <details>
 <summary>View Image</summary>
+<img width="1454" height="652" alt="image" src="https://github.com/user-attachments/assets/14702c8c-91d1-41ab-94d4-24768574aae6" />
 
 </details>
 
-Step 4: Adding Authenticated Users
+## Step 24: Adding Authenticated Users
 
 The Add button was selected in Advanced Security Settings.
 
@@ -292,38 +293,38 @@ In the Select User or Group window, authenticated users was entered and Check Na
 After the group was recognized, OK was clicked.
 
 This added the Authenticated Users group to the permission settings.
-
 <details>
 <summary>View Image</summary>
+<img width="1485" height="598" alt="image" src="https://github.com/user-attachments/assets/51a5aabe-7d22-4093-8fe5-27a59cf1c07e" />
 
 </details>
 
-Step 5: Setting Permissions for Authenticated Users
+## Step 25: Setting Permissions for Authenticated Users
 
 The permission entry for Authenticated Users was configured.
 
-Under Applies to, This folder only was selected.
+Under 'Applies to', This folder only was selected.
 
-Next, Show advanced permissions was clicked.
+Next, 'Show advanced permissions' was clicked.
 
 Only the following permissions were checked:
 
-Traverse folder / execute file
+- Traverse folder / execute file 
 
-Read attributes
+- Read attributes
 
-Create folders / append data
+- Create folders / append data
 
 All other permissions were left unchecked.
-
-Why this matters: These permissions allow authenticated users to create their own folders inside ROAMING without automatically receiving full access to other employees' folders.
+These permissions allow authenticated users to create their own folders inside ROAMING without automatically receiving full access to other employees' folders.
 
 <details>
 <summary>View Image</summary>
+<img width="1237" height="504" alt="image" src="https://github.com/user-attachments/assets/01a572e4-e64e-4ae4-9a60-7610173df2e9" />
 
 </details>
 
-Step 6: Saving the NTFS Permissions
+# Step 26: Saving the NTFS Permissions
 
 After configuring the permissions, OK was selected.
 
@@ -331,14 +332,14 @@ The Advanced Security Settings window was closed by clicking OK again.
 
 The ROAMING Properties window was then closed.
 
-The lab's Score button was used to validate the configuration.
 
 <details>
 <summary>View Image</summary>
+<img width="2107" height="971" alt="image" src="https://github.com/user-attachments/assets/c97282e1-c4a8-4f24-89e8-09f743005d46" />
 
 </details>
 
-Why This Lab Matters
+
 
 NTFS permissions help protect employee files stored on a shared server.
 
@@ -352,16 +353,6 @@ This is important for Folder Redirection, where employee Documents are stored on
 
 
 
-What I Learned
+# What I Learned
 This lab helped me understand how a work computer joins a domain, why the computer needs to reach the domain server, how an employee account is created, how sign-in settings and Group Policy work, and how access to folders can be controlled.
-Skills Practiced
-Joining a Windows computer to a domain
-Checking network connections and DNS
-Using Active Directory Users and Computers
-Creating and organizing a user account
-Working with sign-in scripts
-Working with Group Policy
-Checking shared folders and file permissions
-Testing the setup from a user computer
-
 

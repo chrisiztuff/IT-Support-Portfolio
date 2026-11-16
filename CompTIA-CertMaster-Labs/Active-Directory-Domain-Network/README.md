@@ -195,57 +195,162 @@ Folder Redirection allows employees' Documents folders to be stored on a central
 <img width="1592" height="656" alt="image" src="https://github.com/user-attachments/assets/62f20a92-0c44-4af2-9204-57001ddde276" />
 </details>
 
+## step 17: Begin configuring a shared folder on ms10
+The MS10 virtual machine was opened, and the domain account 515support\Jaime was used to sign in.
+MS10 was the server used to store shared files for employees.
+<details>
+<summary>View Image</summary>
+<img width="1764" height="771" alt="image" src="https://github.com/user-attachments/assets/c66ee52b-3a1d-4a2c-8b51-14edaf319945" />
+</details>
+
+## Step 18: Locating the ROAMING Folder
+File Explorer was opened on MS10.
+The C:\ drive was selected, and the existing ROAMING folder was located.
+This folder would be used to store employees' redirected Documents.
+<details>
+<summary>View Image</summary>
+<img width="1669" height="712" alt="image" src="https://github.com/user-attachments/assets/f0264b82-df66-49b6-8542-a83d4a3461b7" />
+</details>
+
+## Step 19: Opening Advanced Sharing
+The ROAMING folder was right-clicked, and Properties was selected.
+Under the Sharing tab, Advanced Sharing was opened.
+This allowed the folder to be shared with other computers on the network.
+The Share this folder checkbox was selected.
+The share name was set to ROAMING.
+The Permissions button was selected to configure who could access the shared folder.
+<details>
+<summary>View Image</summary>
+<img width="1681" height="813" alt="image" src="https://github.com/user-attachments/assets/2d40eaaa-51b9-4373-833e-b1d4f845f42f" />
+</details>
+
+## Step 20: Configuring Share Permissions
+Under Share Permissions, the Everyone group was selected.
+The Allow checkbox for Full Control was checked.
+This also enabled Change and Read permissions.
+The changes were saved by clicking OK.
+Share permissions control what users can do when accessing a folder over the network.
+<details>
+<summary>View Image</summary>
+<img width="1599" height="836" alt="image" src="https://github.com/user-attachments/assets/4815ece0-6682-4d9b-b0bc-6760b33f2b67" />
+</details>
+
+## Step 21: Verifying the Shared Folder
+The Advanced Sharing window was closed.
+Under the Sharing tab, the folder was shown as shared with the network path:
+\\MS10\roaming
+This confirmed that the ROAMING folder was configured as a network share.
+<details>
+<summary>View Image</summary>
+<img width="1713" height="840" alt="image" src="https://github.com/user-attachments/assets/da0edb84-fd61-4022-b91a-4b9db4bc4445" />
+</details>
+
+Configuring NTFS Security Permissions on MS10
+
+Step 1: Opening the ROAMING Folder Security Settings and Disabling Permission Inheritance
+
+On MS10, the C:\ROAMING folder's Properties window was opened.
+The Security tab was selected, followed by Advanced.
+
+This opened the advanced security settings, where access to the folder could be managed.
+
+In Advanced Security Settings, the Disable inheritance button was selected.
+
+The option Convert inherited permissions into explicit permissions on this object was chosen.
+
+This stopped the ROAMING folder from automatically receiving permissions from its parent folder, C:\.
+
+The existing permissions were kept so they could be changed manually.
+Disabling inheritance allows the ROAMING folder to have its own security permissions instead of automatically using the permissions from the C: drive.
+
+<details>
+<summary>View Image</summary>
+<img width="1498" height="726" alt="image" src="https://github.com/user-attachments/assets/1d21f3d8-91c6-4fa9-91f8-e6bee635bf4a" />
+</details>
+
+Step 3: Removing the Users Group
+
+In the permission entries list, each Users (MS10\Users) entry was selected and removed.
+
+The Remove button was used to delete these entries.
+
+This helped prevent the general local Users group from keeping its previous access permissions.
+
+<details>
+<summary>View Image</summary>
+
+</details>
+
+Step 4: Adding Authenticated Users
+
+The Add button was selected in Advanced Security Settings.
+
+Next, Select a principal was clicked.
+
+In the Select User or Group window, authenticated users was entered and Check Names was selected.
+
+After the group was recognized, OK was clicked.
+
+This added the Authenticated Users group to the permission settings.
+
+<details>
+<summary>View Image</summary>
+
+</details>
+
+Step 5: Setting Permissions for Authenticated Users
+
+The permission entry for Authenticated Users was configured.
+
+Under Applies to, This folder only was selected.
+
+Next, Show advanced permissions was clicked.
+
+Only the following permissions were checked:
+
+Traverse folder / execute file
+
+Read attributes
+
+Create folders / append data
+
+All other permissions were left unchecked.
+
+Why this matters: These permissions allow authenticated users to create their own folders inside ROAMING without automatically receiving full access to other employees' folders.
+
+<details>
+<summary>View Image</summary>
+
+</details>
+
+Step 6: Saving the NTFS Permissions
+
+After configuring the permissions, OK was selected.
+
+The Advanced Security Settings window was closed by clicking OK again.
+
+The ROAMING Properties window was then closed.
+
+The lab's Score button was used to validate the configuration.
+
+<details>
+<summary>View Image</summary>
+
+</details>
+
+Why This Lab Matters
+
+NTFS permissions help protect employee files stored on a shared server.
+
+The ROAMING folder was configured so authenticated employees could create their own folders.
+
+The goal was to allow each employee to store Documents in a personal folder without automatically giving other employees access to those files.
+
+This is important for Folder Redirection, where employee Documents are stored on a company server instead of only on individual computers.
 
 
-Step 18: Checking user settings 
-The lab returned to user settings to connect the account setup with the sign-in task.
-Why this matters: User settings tell Windows what should happen when someone logs in.
-![Step 18: Checking user settings](screenshots/21_33-30_account-properties.jpg)
 
-Step 19: Editing the sign-in script 
-The sign-in script was edited and checked against the lab directions.
-Why this matters: A small typing mistake in a script can keep it from working.
-![Step 19: Editing the sign-in script](screenshots/22_36-00_login-script-editing.jpg)
 
-Step 20: Saving the script 
-The script was saved so it could be used later in the lab.
-Why this matters: Saving the file makes the script available for the next steps.
-![Step 20: Saving the script](screenshots/23_37-30_save-script.jpg)
-
-Step 21: Opening Group Policy tools 
-The lab moved to Group Policy on the Windows server.
-Why this matters: Group Policy lets IT set rules for many computers or users at once.
-![Step 21: Opening Group Policy tools](screenshots/24_41-30_server-manager-gpo.jpg)
-
-Step 22: Working with Group Policy 
-The Group Policy editor was used to set up the policy in the lab.
-Why this matters: Instead of changing every PC by hand, IT can manage shared settings in one place.
-![Step 22: Working with Group Policy](screenshots/25_43-30_group-policy-editor.jpg)
-
-Step 23: Checking the policy settings 
-The policy settings were reviewed as part of the setup.
-Why this matters: A policy must be set up correctly before it can affect a user or computer.
-![Step 23: Checking the policy settings](screenshots/26_46-30_gpo-policy-settings.jpg)
-
-Step 24: Working with shared folders 
-The lab worked with shared folder settings. The lab used `C:\LABFILES` and the network location `\\MS10\ROAMING` in its folder tasks.
-Why this matters: A shared folder lets approved people use files stored on another computer.
-![Step 24: Working with shared folders](screenshots/27_50-30_shared-folder-properties.jpg)
-
-## Step 25: Setting folder permissions 
-Windows folder security settings were opened to manage who could use the folder.
-Why this matters: Permissions decide who can open, change, or delete files.
-![Step 25: Setting folder permissions](screenshots/28_52-30_ntfs-permissions.jpg)
-
-## Step 26: Reviewing advanced permissions 
-The advanced security settings were reviewed for the folder.
-Why this matters: Checking permissions helps prevent the wrong people from accessing files.
-![Step 26: Reviewing advanced permissions](screenshots/29_55-00_advanced-security.jpg)
-
-## Step 27: Testing the final setup 
-Near the end, the lab tested the user setup on `PC11`. The lab included refreshing Group Policy with `gpupdate`, signing in as Ronnie, and checking the `\\MS10\ROAMING` folder for the folder-related task.
-Why this matters: A final test matters because it shows whether the setup works for the actual user.
-![Step 27: Testing the final setup](screenshots/30_58-00_ronnie-sign-in-policy.jpg)
 
 What I Learned
 This lab helped me understand how a work computer joins a domain, why the computer needs to reach the domain server, how an employee account is created, how sign-in settings and Group Policy work, and how access to folders can be controlled.

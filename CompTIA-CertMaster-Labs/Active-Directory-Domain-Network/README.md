@@ -350,7 +350,64 @@ The goal was to allow each employee to store Documents in a personal folder with
 This is important for Folder Redirection, where employee Documents are stored on a company server instead of only on individual computers.
 
 
+## Testing the Folder Redirection Policy
 
+### Step 27: Opening File Explorer on PC11
+On PC11, File Explorer was opened to prepare for testing the Folder Redirection policy. The Documents folder was located. This folder would be used to test whether employee files could be redirected to the shared server.
+
+<details>
+<summary>View Image</summary>
+<img width="1352" height="614" alt="image" src="https://github.com/user-attachments/assets/f0e5ec5a-2f98-47b9-865a-928576ec43e1" />
+
+</details>
+
+### Step 28: Copying Test Files from LABFILES
+On PC11, the C:\LABFILES folder was opened. Several test files and folders were selected and copied. These files would be placed in the Documents folder to test whether Folder Redirection could move them to the network server.
+
+<details>
+<summary>View Image</summary>
+<img width="1247" height="813" alt="image" src="https://github.com/user-attachments/assets/2cd0b1bd-5b7e-4518-aabd-e950207678cc" />
+
+</details>
+
+### Step 29: Pasting Files into Documents
+The Documents folder was opened on PC11. The copied files were pasted into this folder. These files were used to test whether the Group Policy would redirect the Documents folder to the ROAMING share on MS10.
+
+<details>
+<summary>View Image</summary>
+<img width="1445" height="686" alt="image" src="https://github.com/user-attachments/assets/f63b55d7-dbe0-42f1-9256-1367231677b4" />
+
+</details>
+
+### Step 30: Updating Group Policy
+Windows PowerShell was opened on PC11 using Ronnie's account. The `gpupdate` command was executed to refresh Group Policy settings. The computer and user policy updates completed successfully, but Windows displayed a warning that Folder Redirection needed to be processed during the next sign-in. This meant the user needed to sign out and sign back in for the policy to apply.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1067" height="794" alt="image" src="https://github.com/user-attachments/assets/3e8f2787-3cdd-43af-9188-074fe08c9006" />
+
+</details>
+
+### Step 31: Signing Back In as Ronnie
+PC11 was signed out and Ronnie's domain account was used to sign back in. During sign-in, Windows displayed the message "Applying Folder Redirection policy." This showed that Windows was processing the policy and moving the Documents folder to the shared network location.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1095" height="553" alt="image" src="https://github.com/user-attachments/assets/604b695b-2751-4c42-883e-f0c9a9aab00d" />
+
+</details>
+
+### Step 32: Verifying the ROAMING Folder on MS10
+
+The MS10 server was opened, and File Explorer was used to navigate to C:\ROAMING. Inside the ROAMING folder, a new folder named Ronnie appeared. This confirmed that the Folder Redirection policy was applied successfully and created Ronnie's folder on the server. The policy was configured to give Ronnie exclusive access to his redirected files, helping protect employee documents from unauthorized access.
+
+<details> <summary>View Image</summary>
+
+<img width="1480" height="719" alt="image" src="https://github.com/user-attachments/assets/90c99a1c-1ae3-419c-8bc4-b5c8f1e218ad" />
+
+</details>
 
 
 # What I Learned

@@ -324,7 +324,7 @@ These permissions allow authenticated users to create their own folders inside R
 
 </details>
 
-# Step 26: Saving the NTFS Permissions
+## Step 26: Saving the NTFS Permissions
 
 After configuring the permissions, OK was selected.
 

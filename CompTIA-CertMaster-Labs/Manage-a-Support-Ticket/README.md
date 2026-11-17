@@ -92,4 +92,119 @@ Reading the ticket subject and priority helps technicians decide which requests 
 
 </details>
 
+## Step 5: Reviewing Password Reset Ticket #608869
+
+In the osTicket ticket queue, I located ticket **#608869**, titled **Reset password**.
+
+I moved the mouse pointer over the ticket number to display a pop-up window containing additional information about the request.
+
+The ticket summary showed the following details:
+
+| Ticket Information | Details |
+|---|---|
+| Ticket Number | 608869 |
+| Subject | Reset password |
+| Submitted By | Jaylan |
+| Email | jaylan@515support.com |
+| Department | Maintenance |
+| Status | Open — Overdue |
+| Assigned To | Unassigned |
+| Help Topic | Report a Problem |
+
+The ticket was marked as **overdue**, meaning its due date had passed without the ticket being completed.
+
+The ticket was also **unassigned**, meaning no support technician had taken responsibility for it yet.
+
+At the bottom of the pop-up window, I selected **Assign** to open the ticket details.
+
+
+Help desk technicians review ticket details to understand the employee's problem, check its urgency, and determine whether someone is already working on it.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1440" height="572" alt="image" src="https://github.com/user-attachments/assets/073ae0a9-a3ca-428d-9f4e-0b5ceb93d525" />
+
+</details>
+
+## Step 6: Claiming Ownership of Ticket #608869
+
+After opening ticket **#608869**, I located the person-shaped assignment icon near the top of the ticket details page.
+
+I clicked the small downward arrow next to the icon. A menu appeared with three options:
+
+- Claim
+- Agent
+- Team
+
+I selected **Claim** to take ownership of the ticket.
+
+Claiming a ticket means that the support technician takes responsibility for handling the employee's request.
+
+This helps other IT team members know that someone is already working on the problem.
+
+In a real IT help desk, claiming tickets helps prevent multiple technicians from working on the same issue unnecessarily.
+
+It also makes it easier to track who is responsible for resolving each support request.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1508" height="670" alt="image" src="https://github.com/user-attachments/assets/8179d075-0be4-4fbb-aac0-9aacfcec0edf" />
+
+</details>
+
+## Step 7: Confirming Ticket Ownership
+
+After selecting **Claim**, a confirmation window appeared with the message:
+
+**"Are you sure you want to CLAIM this ticket?"**
+
+I clicked **Yes, Claim** to confirm that I wanted to take responsibility for ticket **#608869**.
+
+The lab instructions indicated that the ticket details would update with the activity message **"Jamie Admin claimed this."**
+
+This activity message records which support technician claimed the ticket.
+
+Confirming ticket ownership helps IT departments track technician responsibilities and maintain a record of actions performed on support requests.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1471" height="605" alt="image" src="https://github.com/user-attachments/assets/c4bb1785-ad3c-4458-8545-3ddc6bd9c690" />
+
+</details>
+
+## Step 8: Identifying the Employee Who Submitted the Ticket
+
+After claiming the ticket, I reviewed the ticket details to identify the employee who submitted the request.
+
+Under the **User** section, the following information appeared:
+
+| Field | Information |
+|---|---|
+| User | Jaylan |
+| Email | jaylan@515support.com |
+| Source | Web |
+| Help Topic | Report a Problem |
+| Last Message | March 8, 2022, 11:00 AM |
+
+The ticket was created by **Jaylan**.
+
+The **Source: Web** field indicated that the request was submitted through the web-based ticketing system.
+
+I selected **Jaylan** as the answer to the lab question.
+
+Before helping an employee, an IT support technician needs to identify who reported the issue.
+
+Reviewing the user's information helps the technician understand who needs assistance and locate the correct support request.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1107" height="511" alt="image" src="https://github.com/user-attachments/assets/6677f3a9-5d4a-4966-9d7c-dac14c9a454c" />
+
+</details>
+
+
 

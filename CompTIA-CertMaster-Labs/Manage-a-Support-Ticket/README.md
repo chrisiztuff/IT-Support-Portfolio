@@ -208,6 +208,7 @@ Reviewing the user's information helps the technician understand who needs assis
 
 </details>
 
+
 ## Step 9: Resetting Jaylan's Password in Active Directory
 
 After reviewing Jaylan's password reset ticket **#608869**, I minimized the Microsoft Edge browser and opened the **Active Directory Administrative Center**.
@@ -234,11 +235,12 @@ Help desk technicians frequently assist employees who forget their passwords or 
 Active Directory allows authorized IT staff to reset an employee's password without needing access to the employee's computer.
 
 <details>
-\<summary>View Image\</summary>
+<summary>View Image\</summary>
 
 <img width="1461" height="481" alt="image" src="https://github.com/user-attachments/assets/156e4f03-0497-42a6-8a15-84e8c4bd05d8" />
 
 \</details>
+
 
 ## Step 10: Verifying Jaylan's Password Reset
 
@@ -255,8 +257,7 @@ IT technicians should always verify that a requested change was completed succes
 A confirmation message provides evidence that the password reset operation succeeded.
 
 <details>
-\<summary>View Image\</summary>
-
+<summary>View Image\</summary>
 <img width="1636" height="736" alt="image" src="https://github.com/user-attachments/assets/d1288348-3571-4162-b434-c3d113cd559f" />
 
 \</details>
@@ -284,7 +285,7 @@ Help desk technicians need to document the actions they perform and communicate 
 Keeping the ticket open allows the technician to follow up if the employee continues experiencing login problems.
 
 <details>
-\<summary>View Image\</summary>
+<summary>View Image\</summary>
 
 <img width="1617" height="652" alt="image" src="https://github.com/user-attachments/assets/5b35fd03-e448-4cc1-ab7e-c46209837268" />
 
@@ -296,7 +297,7 @@ After updating Jaylan's ticket, I returned to the **Open** ticket queue in osTic
 
 
 <details>
-\<summary>View Image\</summary>
+<summary>View Image\</summary>
 
 <img width="1478" height="567" alt="image" src="https://github.com/user-attachments/assets/bb79abbd-c027-44de-a46b-a75ed741f4e2" />
 
@@ -322,7 +323,7 @@ The ticket was marked as overdue and had not yet been assigned to a technician.
 I selected **Assign** to open the ticket details.
 
 <details>
-\<summary>View Image\</summary>
+<summary>View Image\</summary>
 
 <img width="1454" height="598" alt="image" src="https://github.com/user-attachments/assets/f8599891-7cde-4f4b-ab02-b97f6304121e" />
 \<details>
@@ -334,7 +335,7 @@ After opening the ticket, I reviewed the message Dani submitted:
 **"I remember changing my password on Friday but cannot remember what I set it too."**
 
 <details>
-\<summary>View Image\</summary>
+<summary>View Image\</summary>
 
 <img width="957" height="567" alt="image" src="https://github.com/user-attachments/assets/b9903933-b8d9-4816-975c-5f544710160a" />
 \<details>

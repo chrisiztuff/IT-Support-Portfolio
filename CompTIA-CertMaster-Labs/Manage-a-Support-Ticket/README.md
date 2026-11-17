@@ -239,7 +239,9 @@ Active Directory allows authorized IT staff to reset an employee's password with
 
 <img width="1461" height="481" alt="image" src="https://github.com/user-attachments/assets/156e4f03-0497-42a6-8a15-84e8c4bd05d8" />
 
-\</details>
+</details>
+
+
 
 
 ## Step 10: Verifying Jaylan's Password Reset
@@ -260,7 +262,7 @@ A confirmation message provides evidence that the password reset operation succe
 <summary>View Image\</summary>
 <img width="1636" height="736" alt="image" src="https://github.com/user-attachments/assets/d1288348-3571-4162-b434-c3d113cd559f" />
 
-\</details>
+</details>
 
 ## Step 11: Updating Jaylan's Support Ticket
 
@@ -289,7 +291,7 @@ Keeping the ticket open allows the technician to follow up if the employee conti
 
 <img width="1617" height="652" alt="image" src="https://github.com/user-attachments/assets/5b35fd03-e448-4cc1-ab7e-c46209837268" />
 
-\</details>
+</details>
 
 ## Step 12: Reviewing Dani's Password Reset Ticket #920821
 
@@ -301,7 +303,7 @@ After updating Jaylan's ticket, I returned to the **Open** ticket queue in osTic
 
 <img width="1478" height="567" alt="image" src="https://github.com/user-attachments/assets/bb79abbd-c027-44de-a46b-a75ed741f4e2" />
 
-\</details>
+</details>
 
 I located ticket **#920821**, titled **Password reset**, and moved the mouse pointer over the ticket number.
 
@@ -326,7 +328,7 @@ I selected **Assign** to open the ticket details.
 <summary>View Image\</summary>
 
 <img width="1454" height="598" alt="image" src="https://github.com/user-attachments/assets/f8599891-7cde-4f4b-ab02-b97f6304121e" />
-\<details>
+<details>
 
 ### What Dani Wrote in Her Ticket
 
@@ -338,7 +340,7 @@ After opening the ticket, I reviewed the message Dani submitted:
 <summary>View Image\</summary>
 
 <img width="957" height="567" alt="image" src="https://github.com/user-attachments/assets/b9903933-b8d9-4816-975c-5f544710160a" />
-\<details>
+<details>
 
 This explained that Dani had previously changed her password but could no longer remember the new password.
 

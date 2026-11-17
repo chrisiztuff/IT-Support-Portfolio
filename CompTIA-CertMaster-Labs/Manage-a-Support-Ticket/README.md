@@ -208,5 +208,264 @@ Reviewing the user's information helps the technician understand who needs assis
 
 </details>
 
+## Step 9: Resetting Jaylan's Password in Active Directory
+
+After reviewing Jaylan's password reset ticket **#608869**, I minimized the Microsoft Edge browser and opened the **Active Directory Administrative Center**.
+
+Active Directory is used by companies to manage employee accounts, passwords, and access to company computers.
+
+Inside the Active Directory Administrative Center, I located the **Reset Password** section.
+
+I entered the following information:
+
+| Field                                    | Information                |
+| ---------------------------------------- | -------------------------- |
+| User name                                | `515support\jaylan`        |
+| Password                                 | Lab-provided password      |
+| Confirm password                         | Same lab-provided password |
+| User must change password at next log on | Unchecked                  |
+
+After entering the information, I clicked **Apply** to reset Jaylan's password.
+
+The option **User must change password at next log on** was left unchecked because the training lab specifically required this setting.
+
+Help desk technicians frequently assist employees who forget their passwords or cannot access their accounts.
+
+Active Directory allows authorized IT staff to reset an employee's password without needing access to the employee's computer.
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="1461" height="481" alt="image" src="https://github.com/user-attachments/assets/156e4f03-0497-42a6-8a15-84e8c4bd05d8" />
+
+\</details>
+
+## Step 10: Verifying Jaylan's Password Reset
+
+After clicking **Apply**, the Active Directory Administrative Center displayed the following confirmation:
+
+**"Password for 515support\jaylan has been reset successfully."**
+
+This confirmed that Jaylan's account password had been updated.
+
+After verifying the successful password reset, I returned to the osTicket application using Microsoft Edge.
+
+IT technicians should always verify that a requested change was completed successfully before updating a support ticket.
+
+A confirmation message provides evidence that the password reset operation succeeded.
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="1636" height="736" alt="image" src="https://github.com/user-attachments/assets/d1288348-3571-4162-b434-c3d113cd559f" />
+
+\</details>
+
+## Step 11: Updating Jaylan's Support Ticket
+
+After resetting Jaylan's password, I returned to ticket **#608869** in osTicket.
+
+I entered the following message into the response box:
+
+**"Account has been reset, please call the help desk at x333 to obtain the updated password"**
+
+This message informed Jaylan that the account password had been reset and explained how to obtain the updated password.
+
+Instead of including the password directly in the ticket, the message instructed Jaylan to contact the help desk.
+
+I left the ticket status as **Open (current)** because the employee had not yet confirmed that the new password worked.
+
+I then clicked the orange **Post Reply** button to submit the response.
+
+The ticket details displayed a new last-response timestamp, confirming that the reply was recorded.
+
+Help desk technicians need to document the actions they perform and communicate the next steps to employees.
+
+Keeping the ticket open allows the technician to follow up if the employee continues experiencing login problems.
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="1617" height="652" alt="image" src="https://github.com/user-attachments/assets/5b35fd03-e448-4cc1-ab7e-c46209837268" />
+
+\</details>
+
+## Step 12: Reviewing Dani's Password Reset Ticket #920821
+
+After updating Jaylan's ticket, I returned to the **Open** ticket queue in osTicket.
+
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="1478" height="567" alt="image" src="https://github.com/user-attachments/assets/bb79abbd-c027-44de-a46b-a75ed741f4e2" />
+
+\</details>
+
+I located ticket **#920821**, titled **Password reset**, and moved the mouse pointer over the ticket number.
+
+A pop-up window appeared showing the following information:
+
+| Ticket Information | Details                                            |
+| ------------------ | -------------------------------------------------- |
+| Ticket Number      | 920821                                             |
+| Subject            | Password reset                                     |
+| Submitted By       | Dani                                               |
+| Email              | [dani@515support.com](mailto\:dani@515support.com) |
+| Department         | Maintenance                                        |
+| Priority           | Normal                                             |
+| Ticket State       | Open — Overdue                                     |
+| Assigned To        | Unassigned                                         |
+
+The ticket was marked as overdue and had not yet been assigned to a technician.
+
+I selected **Assign** to open the ticket details.
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="1454" height="598" alt="image" src="https://github.com/user-attachments/assets/f8599891-7cde-4f4b-ab02-b97f6304121e" />
+\<details>
+
+### What Dani Wrote in Her Ticket
+
+After opening the ticket, I reviewed the message Dani submitted:
+
+**"I remember changing my password on Friday but cannot remember what I set it too."**
+
+<details>
+\<summary>View Image\</summary>
+
+<img width="957" height="567" alt="image" src="https://github.com/user-attachments/assets/b9903933-b8d9-4816-975c-5f544710160a" />
+\<details>
+
+This explained that Dani had previously changed her password but could no longer remember the new password.
+
+Because Dani could not remember her password, she needed assistance regaining access to her account.
+
+Reading the employee's original message helps the technician understand the problem before making changes.
+
+In Dani's case, the message showed that she had forgotten a recently changed password.
+
+\<details> \<summary>View Image\</summary>
+
+\<!-- Insert screenshot showing Ticket #920821 summary -->
+
+\<!-- Insert screenshot showing Dani's original message -->
+
+\</details>
+
+## Step 13: Claiming Dani's Support Ticket
+
+After reviewing Dani's request, I located the person-shaped assignment icon at the top of ticket **#920821**.
+
+I clicked the downward arrow next to the icon and selected **Claim**.
+
+The ticketing system asked for confirmation, and I selected **Yes, Claim**.
+
+A green notification appeared stating:
+
+**"Ticket assigned to you successfully"**
+
+The ticket details showed:
+
+| Field         | Information |
+| ------------- | ----------- |
+| Ticket Number | 920821      |
+| User          | Dani        |
+| Assigned To   | Jaime Admin |
+| Status        | Open        |
+| Priority      | Normal      |
+
+This confirmed that the ticket had been assigned to the support technician account **Jaime Admin**.
+
+I also verified that **Dani** was the employee who submitted the ticket.
+
+Claiming a ticket allows other technicians to see who is responsible for handling the employee's problem.
+
+It also helps prevent duplicate work and keeps support requests organized.
+
+\<details>
+\<summary>View Image\</summary>
+
+\<!-- Insert screenshot showing Claim option for Dani's ticket -->
+
+\<!-- Insert screenshot showing ticket assigned successfully -->
+
+\</details>
+
+## Step 14: Resetting Dani's Password in Active Directory
+
+After claiming Dani's ticket, I returned to the **Active Directory Administrative Center**.
+
+Inside the **Reset Password** section, I entered Dani's domain account information.
+
+| Field                                    | Information                |
+| ---------------------------------------- | -------------------------- |
+| User name                                | `515support\Dani`          |
+| Password                                 | Lab-provided password      |
+| Confirm password                         | Same lab-provided password |
+| User must change password at next log on | Unchecked                  |
+
+I clicked **Apply** to reset Dani's password.
+
+The Active Directory Administrative Center displayed the confirmation:
+
+**"Password for 515support\Dani has been reset successfully."**
+
+This confirmed that Dani's account password had been updated.
+
+This task demonstrated how IT support technicians can help employees regain access to their accounts using Active Directory.
+
+It also reinforced the importance of verifying that the password reset was successful before responding to the employee.
+
+\<details>
+\<summary>View Image\</summary>
+
+\<!-- Insert screenshot showing Dani's successful password reset -->
+
+\</details>
+
+## Step 15: Responding to Dani's Support Ticket
+
+After successfully resetting Dani's password, I returned to ticket **#920821** in osTicket.
+
+In the response box, I entered the following message:
+
+**"Account has been reset, please call the help desk at x333 to obtain the updated password"**
+
+The message informed Dani that the password reset was completed and instructed her to contact the help desk to obtain the new password.
+
+I left the ticket status as **Open (current)** because Dani had not yet confirmed that she could successfully sign in.
+
+I then clicked the orange **Post Reply** button.
+
+Posting a reply allows the employee to understand what action was taken and what they need to do next.
+
+Leaving the ticket open helps ensure that the support request is not considered resolved before the employee confirms that the problem has been fixed.
+
+\<details> \<summary>View Image\</summary>
+
+\<!-- Insert screenshot showing Dani's response message -->
+
+\<!-- Insert screenshot showing Post Reply button -->
+
+\</details>
+
+## What I Learned From Updating Support Tickets
+
+In this section, I practiced resetting employee passwords using Active Directory and updating help desk tickets in osTicket.
+
+I worked with two employee support requests:
+
+| Ticket  | Employee | Problem                          | Action Taken                      |
+| ------- | -------- | -------------------------------- | --------------------------------- |
+| #608869 | Jaylan   | Password reset request           | Reset password and posted a reply |
+| #920821 | Dani     | Forgot recently changed password | Reset password and posted a reply |
+
+These tasks helped me understand how IT support technicians use Active Directory and ticketing systems together to resolve employee account problems.
+
+I also learned the importance of documenting completed work, communicating with employees, and keeping tickets open until the employee confirms that the issue has been resolved.
+
 
 

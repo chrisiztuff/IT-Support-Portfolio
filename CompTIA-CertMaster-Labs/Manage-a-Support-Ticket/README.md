@@ -1,6 +1,8 @@
 # Manage a Support Ticket
 **CompTIA CertMaster Guided Lab | IT Help Desk | osTicket | Windows**
 
+## Live recorded unlisted video of me doing the guided lab:
+https://www.youtube.com/watch?v=USTvKOX6VQg&list=PLhUaWIVkfPbpP9TSJuC9po715y6H1ul6G&index=49
 ## What This Project Is About
 In this guided lab, I practiced using **osTicket**, a help desk ticketing system used to organize and manage IT support requests. A support ticket is a record of a problem reported by an employee, such as a forgotten password, broken printer, or VPN connection issue. The goal of this section was to sign in to the support center, review the open ticket queue, and identify password reset requests.
 

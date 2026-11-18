@@ -354,9 +354,8 @@ In Dani's case, the message showed that she had forgotten a recently changed pas
 
 \<!-- Insert screenshot showing Ticket #920821 summary -->
 
-\<!-- Insert screenshot showing Dani's original message -->
 
-\</details>
+</details>
 
 ## Step 13: Claiming Dani's Support Ticket
 
@@ -427,7 +426,7 @@ It also reinforced the importance of verifying that the password reset was succe
 
 \<!-- Insert screenshot showing Dani's successful password reset -->
 
-\</details>
+</details>
 
 ## Step 15: Responding to Dani's Support Ticket
 
@@ -453,7 +452,7 @@ Leaving the ticket open helps ensure that the support request is not considered 
 
 \<!-- Insert screenshot showing Post Reply button -->
 
-\</details>
+</details>
 
 ## What I Learned From Updating Support Tickets
 

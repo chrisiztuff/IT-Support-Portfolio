@@ -439,9 +439,178 @@ Leaving the ticket open helps ensure that the support request is not considered 
 <img width="1403" height="558" alt="image" src="https://github.com/user-attachments/assets/c2127aa7-0931-4046-9991-4c89467549e2" />
 <img width="1454" height="591" alt="image" src="https://github.com/user-attachments/assets/1fb106ae-b3a8-48ef-a6c3-46b20ae2c52c" />
 
+</details>
+
+## Step 16: Locating the Answered Support Tickets
+
+After updating Jaylan's and Dani's password reset tickets, the lab scenario stated that both employees had been contacted by phone and confirmed they could successfully use their updated passwords.
+
+<details> \<summary>View Image\</summary>
+
+<img width="400" height="164" alt="image" src="https://github.com/user-attachments/assets/994ec0ff-d6eb-4da7-8822-759e3a63a167" />
+</details>
+
+I returned to **osTicket** and opened the drop-down menu under **Open**.
+
+I selected **Answered** to view the support tickets that had already received a response.
+
+The Answered ticket list contained two tickets:
+
+| Ticket Number | Employee | Issue |
+|---|---|---|
+| #608869 | Jaylan | Password reset |
+| #920821 | Dani | Password reset |
+
+These tickets were ready to be reviewed and marked as resolved because the employees had confirmed that their passwords worked.
+
+Help desk technicians should confirm that an employee's problem has been fixed before marking a support ticket as resolved.
+
+The **Answered** section helps technicians locate tickets that have received a response but still need to be completed.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1589" height="698" alt="image" src="https://github.com/user-attachments/assets/84638475-9a27-46a2-bb1c-a45d7c5be1d5" />
+
+</details>
+
+## Step 17: Attempting to Resolve Jaylan's Support Ticket
+
+After opening the **Answered** ticket list, I selected Jaylan's ticket **#608869**.
+
+I scrolled down to the response section and located the **Ticket Status** menu.
+
+I changed the ticket status from **Open** to **Resolved**.
+
+I then clicked the orange **Post Reply** button without entering an additional response.
+
+However, osTicket displayed an error message:
+
+**"Unable to post the reply. Correct any errors below and try again."**
+
+The response section also displayed:
+
+**"Response required"**
+
+This happened because osTicket required a new response before the ticket could be marked as resolved.
+
+Help desk technicians need to document the final action taken before resolving a support ticket.
+
+This ensures that the ticket contains a record explaining why the problem was considered fixed.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1582" height="596" alt="image" src="https://github.com/user-attachments/assets/1046723a-c32b-4242-9d90-a12575e57136" />
+
+<img width="1496" height="516" alt="image" src="https://github.com/user-attachments/assets/b96c63a6-f657-46e1-858e-0574da712dea" />
+
+</details>
+
+## Step 18: Resolving Jaylan's Support Ticket
+
+After receiving the error message, I entered the following response into Jaylan's ticket:
+
+**"Verified by phone call"**
+
+This message documented that Jaylan had confirmed by phone that he could successfully use his updated password.
+
+I kept the **Ticket Status** set to **Resolved** and clicked **Post Reply** again.
+
+The system processed the updated response and returned to the **Answered** ticket list.
+
+The Answered list now contained only one remaining ticket, showing that Jaylan's ticket had been removed from that queue.
+
+Documenting confirmation from an employee helps demonstrate that the problem was resolved successfully.
+
+It also allows other IT technicians to understand why the ticket was closed if they review it later.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1573" height="624" alt="image" src="https://github.com/user-attachments/assets/4e7f8740-ce1e-44c1-85c4-933b793e7d6b" />
+
+</details>
+
+## Step 19: Resolving Dani's Support Ticket
+
+After resolving Jaylan's ticket, I opened the remaining ticket in the **Answered** list.
+
+This was Dani's password reset ticket **#920821**.
+
+Earlier in the lab, Dani had explained that she changed her password on Friday but could not remember the new password.
+
+Her original message stated:
+
+**"I remember changing my password on Friday but cannot remember what I set it too."**
+
+After resetting Dani's password through Active Directory and responding to her ticket, the lab scenario stated that Dani had confirmed by phone that she could successfully use her updated credentials.
+
+I entered the following message into the response box:
+
+**"Verified by phone call"**
+
+I then changed the **Ticket Status** to **Resolved**.
+
+After completing both fields, I clicked the orange **Post Reply** button to submit the final update.
+
+A support ticket should not be marked as resolved simply because a technician has performed a password reset.
+
+The employee should first confirm that the new password works.
+
+Documenting the confirmation helps ensure that the support request was completed properly.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1571" height="722" alt="image" src="https://github.com/user-attachments/assets/4087ddc2-e65e-46fb-8971-53f14ee97ad8" />
+
+
+</details>
+
+## Step 20: Understanding Why Employee Confirmation Is Important
+
+After completing the password reset tickets, the lab presented a question:
+
+I selected the following answer:
+
+<details>
+
+**"Steps taken to resolve the ticket may not have worked."**
+
+<img width="406" height="360" alt="image" src="https://github.com/user-attachments/assets/ec77752c-5335-45f8-a105-56684abd0255" />
+</details>
+
+
+This was the correct answer because performing a troubleshooting action does not always guarantee that the employee's problem has been fixed.
+
+For example, resetting an employee's password does not automatically confirm that the employee can successfully sign in.
+
+The employee might still experience problems with their account or computer.
+
+Receiving confirmation helps ensure that the original problem was actually resolved.
+
+
+Help desk technicians should verify that their solutions work before closing support tickets.
+
+This helps prevent unresolved problems from being overlooked and reduces the chance that employees will need to submit another ticket for the same issue.
+
+<details>
+<summary>View Image</summary>
+
+<!-- Insert screenshot showing the correct answer selected -->
 
 </details>
 
 
+# This lab helped me practice several important IT support skills:
+
+- Managing and updating support tickets.
+- Documenting employee communication.
+- Understanding the importance of verifying troubleshooting results.
+- Resolving tickets after receiving employee confirmation.
+- Keeping accurate records of completed support requests.
+
+These are important skills for **Help Desk Technicians, IT Support Specialists, and Desktop Support Technicians** because they regularly troubleshoot employee problems and document their work in ticketing systems.
 
 

@@ -297,10 +297,8 @@ Keeping the ticket open allows the technician to follow up if the employee conti
 
 After updating Jaylan's ticket, I returned to the **Open** ticket queue in osTicket.
 
-
 <details>
 <summary>View Image\</summary>
-
 <img width="1478" height="567" alt="image" src="https://github.com/user-attachments/assets/bb79abbd-c027-44de-a46b-a75ed741f4e2" />
 
 </details>

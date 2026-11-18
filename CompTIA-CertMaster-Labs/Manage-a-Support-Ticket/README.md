@@ -595,12 +595,7 @@ Help desk technicians should verify that their solutions work before closing sup
 
 This helps prevent unresolved problems from being overlooked and reduces the chance that employees will need to submit another ticket for the same issue.
 
-<details>
-<summary>View Image</summary>
 
-<!-- Insert screenshot showing the correct answer selected -->
-
-</details>
 
 
 # This lab helped me practice several important IT support skills:

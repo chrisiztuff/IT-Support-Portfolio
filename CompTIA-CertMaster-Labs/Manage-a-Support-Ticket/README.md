@@ -326,7 +326,7 @@ I selected **Assign** to open the ticket details.
 <summary>View Image\</summary>
 
 <img width="1454" height="598" alt="image" src="https://github.com/user-attachments/assets/f8599891-7cde-4f4b-ab02-b97f6304121e" />
-<details>
+</details>
 
 ### What Dani Wrote in Her Ticket
 
@@ -338,7 +338,7 @@ After opening the ticket, I reviewed the message Dani submitted:
 <summary>View Image\</summary>
 
 <img width="957" height="567" alt="image" src="https://github.com/user-attachments/assets/b9903933-b8d9-4816-975c-5f544710160a" />
-<details>
+</details>
 
 This explained that Dani had previously changed her password but could no longer remember the new password.
 
@@ -377,12 +377,12 @@ Claiming a ticket allows other technicians to see who is responsible for handlin
 
 It also helps prevent duplicate work and keeps support requests organized.
 
-\<details>
-\<summary>View Image\</summary>
+<details>
+<summary>View Image\</summary>
 <img width="1547" height="586" alt="image" src="https://github.com/user-attachments/assets/87c0cfe6-2977-485c-9808-518df272befc" />
 
 
-\</details>
+</details>
 
 ## Step 14: Resetting Dani's Password in Active Directory
 
@@ -409,10 +409,10 @@ This task demonstrated how IT support technicians can help employees regain acce
 
 It also reinforced the importance of verifying that the password reset was successful before responding to the employee.
 
-\<details>
-\<summary>View Image\</summary>
+<details>
+<summary>View Image\</summary>
 
-\<!-- Insert screenshot showing Dani's successful password reset -->
+<img width="1494" height="603" alt="image" src="https://github.com/user-attachments/assets/334a2c04-1a45-46c5-9f47-df316189e7c5" />
 
 </details>
 
@@ -434,28 +434,14 @@ Posting a reply allows the employee to understand what action was taken and what
 
 Leaving the ticket open helps ensure that the support request is not considered resolved before the employee confirms that the problem has been fixed.
 
-\<details> \<summary>View Image\</summary>
+<details> \<summary>View Image\</summary>
 
-\<!-- Insert screenshot showing Dani's response message -->
+<img width="1403" height="558" alt="image" src="https://github.com/user-attachments/assets/c2127aa7-0931-4046-9991-4c89467549e2" />
+<img width="1454" height="591" alt="image" src="https://github.com/user-attachments/assets/1fb106ae-b3a8-48ef-a6c3-46b20ae2c52c" />
 
-\<!-- Insert screenshot showing Post Reply button -->
 
 </details>
 
-## What I Learned From Updating Support Tickets
-
-In this section, I practiced resetting employee passwords using Active Directory and updating help desk tickets in osTicket.
-
-I worked with two employee support requests:
-
-| Ticket  | Employee | Problem                          | Action Taken                      |
-| ------- | -------- | -------------------------------- | --------------------------------- |
-| #608869 | Jaylan   | Password reset request           | Reset password and posted a reply |
-| #920821 | Dani     | Forgot recently changed password | Reset password and posted a reply |
-
-These tasks helped me understand how IT support technicians use Active Directory and ticketing systems together to resolve employee account problems.
-
-I also learned the importance of documenting completed work, communicating with employees, and keeping tickets open until the employee confirms that the issue has been resolved.
 
 
 

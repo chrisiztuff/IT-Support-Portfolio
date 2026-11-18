@@ -346,16 +346,8 @@ This explained that Dani had previously changed her password but could no longer
 
 Because Dani could not remember her password, she needed assistance regaining access to her account.
 
-Reading the employee's original message helps the technician understand the problem before making changes.
-
 In Dani's case, the message showed that she had forgotten a recently changed password.
 
-\<details> \<summary>View Image\</summary>
-
-\<!-- Insert screenshot showing Ticket #920821 summary -->
-
-
-</details>
 
 ## Step 13: Claiming Dani's Support Ticket
 
@@ -389,10 +381,8 @@ It also helps prevent duplicate work and keeps support requests organized.
 
 \<details>
 \<summary>View Image\</summary>
+<img width="1547" height="586" alt="image" src="https://github.com/user-attachments/assets/87c0cfe6-2977-485c-9808-518df272befc" />
 
-\<!-- Insert screenshot showing Claim option for Dani's ticket -->
-
-\<!-- Insert screenshot showing ticket assigned successfully -->
 
 \</details>
 

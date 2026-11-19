@@ -6,10 +6,6 @@ https://www.youtube.com/watch?v=uE_L0u2_OPE&list=PLhUaWIVkfPbpP9TSJuC9po715y6H1u
 
 
 
-# Configure Workstation Security Policy
-
-## 1. Changing Windows Security Policies
-
 ### Step 1: Signing In to the Windows Workstation
 
 I started by opening the Windows workstation and signing in to the account named **Morgan**. This allowed me to access the computer and begin changing its security settings.
@@ -19,7 +15,7 @@ The goal of this lab was to configure password rules that would help protect emp
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1536" height="673" alt="image" src="https://github.com/user-attachments/assets/dedcb5d1-dade-464e-adaa-f26c9c355ba5" />
 
 </details>
 
@@ -32,7 +28,7 @@ I opened this application because it allows administrators to manage security se
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1491" height="731" alt="image" src="https://github.com/user-attachments/assets/e03b66dc-d2e2-462b-8772-5f52f3d9d57d" />
 
 </details>
 
@@ -55,7 +51,7 @@ These settings needed to be changed to match the company's security requirements
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1188" height="588" alt="image" src="https://github.com/user-attachments/assets/593dd6fa-1826-4f38-b147-7d953f544cc6" />
 
 </details>
 
@@ -70,7 +66,7 @@ It helps improve account security by encouraging users to create different passw
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1249" height="637" alt="image" src="https://github.com/user-attachments/assets/b120c6f9-5d03-4c04-8cfa-1d142e24d7fb" />
 
 </details>
 
@@ -85,7 +81,7 @@ The company's policy required passwords to expire after 30 days.
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1314" height="698" alt="image" src="https://github.com/user-attachments/assets/23fc6f8e-60c2-4851-888b-1cd92e29a62e" />
 
 </details>
 
@@ -100,7 +96,7 @@ It also helps prevent users from quickly cycling through ten passwords just to r
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1249" height="600" alt="image" src="https://github.com/user-attachments/assets/82a833db-f9e3-4809-a6ff-294830f1dcae" />
 
 </details>
 
@@ -117,7 +113,7 @@ This helps protect employee accounts against repeated password-guessing attempts
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="1456" height="507" alt="image" src="https://github.com/user-attachments/assets/70cb6c94-2b91-4a28-8079-057da529bb7d" />
 
 </details>
 
@@ -137,7 +133,7 @@ These settings help prevent repeated login attempts while allowing the account t
 <details>
 <summary>View Image</summary>
 
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="553" height="269" alt="image" src="https://github.com/user-attachments/assets/1b42b380-ec6b-4a24-8a70-c1c563192db5" />
 
 </details>
 
@@ -152,8 +148,111 @@ This setting requires employees to create passwords containing at least ten char
 Longer passwords generally make it more difficult for attackers to guess passwords.
 
 <details>
-<summary>View Image</summary>
-
-<img src="PASTE_IMAGE_URL_HERE" />
+<img width="871" height="582" alt="image" src="https://github.com/user-attachments/assets/b1336b31-a88f-40d3-8842-554c07f43d9b" />
 
 </details>
+
+
+### Step 10: Opening Security Options
+
+I opened **Local Security Policy**, expanded **Local Policies**, and selected **Security Options**.
+
+This section contains settings that control how users sign in to Windows and how the computer protects user accounts.
+
+I needed to change a setting so Windows would stop automatically displaying the username of the last person who signed in.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1443" height="628" alt="image" src="https://github.com/user-attachments/assets/d3aa0eae-39fd-4995-ac95-67cf0eeb1049" />
+
+</details>
+
+### Step 11: Finding the Last Signed-In User Policy
+
+I scrolled through the list of security settings until I found **Interactive logon: Don't display last signed-in**.
+
+The setting was originally **Disabled**, which meant Windows could display the previous user's account name on the sign-in screen.
+
+I selected this policy to change how usernames appeared when someone signed in.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1111" height="481" alt="image" src="https://github.com/user-attachments/assets/4a54d234-1b80-4797-9477-84163da47377" />
+
+</details>
+
+### Step 12: Opening the Policy Properties
+
+I right-clicked **Interactive logon: Don't display last signed-in** and selected **Properties**.
+
+This opened the settings window where I could enable or disable the policy.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1312" height="607" alt="image" src="https://github.com/user-attachments/assets/bd580720-618b-48bd-ac58-475edcdda741" />
+
+</details>
+
+### Step 13: Enabling the Security Policy
+
+Inside the policy settings, I selected **Enabled** and saved the change.
+
+This setting prevents Windows from automatically showing the username of the previous person who signed in.
+
+It helps protect user privacy by making it harder for someone looking at the login screen to identify the last user.
+
+<details>
+<summary>View Image</summary>
+
+<img width="747" height="367" alt="image" src="https://github.com/user-attachments/assets/3cea0c04-8038-48b3-9a3e-65fe6bd57aa7" />
+
+</details>
+
+### Step 14: Validating the Policy and Signing Out
+
+After enabling the setting, I clicked the **Score** button to check whether the policy was configured correctly.
+
+The lab displayed **Policy change confirmed — Task complete**, showing that the security setting passed validation.
+
+I then pressed **Ctrl + Alt + Delete** and selected **Sign out** to test the new login behavior.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1345" height="593" alt="image" src="https://github.com/user-attachments/assets/cb2d752a-f637-4517-ad4b-e20fc07f7824" />
+
+</details>
+
+### Step 15: Returning to the Windows Login Screen
+
+After signing out, I returned to the Windows lock screen.
+
+I pressed **Ctrl + Alt + Delete** to open the sign-in screen and check whether the previous username would still appear automatically.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1484" height="465" alt="image" src="https://github.com/user-attachments/assets/dcd80c9d-3451-419c-b734-65c5bad47ca3" />
+
+</details>
+
+### Step 16: Verifying the New Login Security Setting
+
+The Windows sign-in screen displayed **Other user** instead of automatically showing the previous user's account.
+
+I entered the username **Morgan** and the lab password to sign back in.
+
+This confirmed that the new security policy was working as expected.
+
+The computer now required users to enter their usernames instead of automatically displaying the last signed-in account.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1393" height="628" alt="image" src="https://github.com/user-attachments/assets/6bdca4d3-d344-433e-8531-59fd8837fb40" />
+
+</details>
+

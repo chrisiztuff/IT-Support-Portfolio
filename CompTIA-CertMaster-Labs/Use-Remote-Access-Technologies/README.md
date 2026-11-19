@@ -5,6 +5,10 @@
 ## Live recorded unlisted video of me doing the guided lab:
 https://www.youtube.com/watch?v=Vj9ehKp7rPA&list=PLhUaWIVkfPbpP9TSJuC9po715y6H1ul6G&index=45
 
+## What This Project Is About
+
+In this guided lab, I practiced using remote access technologies to connect Windows 10 and Ubuntu computers. I set up Secure Shell (SSH), connected to a Linux computer using PowerShell, tested Remote Desktop Protocol (RDP), and enabled Remote Desktop on Windows. I also used Remmina on Ubuntu to access and control a Windows computer remotely. The screenshots below come from my recorded training lab.
+
 
 # Use Remote Access Technologies
 
@@ -336,3 +340,6 @@ This confirmed that the Remote Desktop connection was working and that I could a
 </details>
 
 
+# What I Learned
+
+This lab helped me understand how IT support technicians connect to computers remotely, how SSH allows secure access to Linux computers, why Remote Desktop must be enabled before connecting, how IP addresses are used to find computers on a network, and how usernames, passwords, and certificates help protect remote connections.

@@ -256,3 +256,195 @@ The computer now required users to enter their usernames instead of automaticall
 
 </details>
 
+
+## 3. Testing the Password Security Policy
+
+### Step 17: Testing a Weak Password
+
+I opened the **Change a password** screen for the Windows user **Morgan** by pressing **Ctrl + Alt + Delete** and selecting **Change a password**.
+
+I entered the existing password and attempted to change it to `12345678`.
+
+This password did not meet the company's security requirements because it was too short and did not contain uppercase letters or special characters.
+
+The purpose of this test was to check whether Windows would prevent users from creating weak passwords.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1261" height="658" alt="image" src="https://github.com/user-attachments/assets/7a64467a-9d9c-40ef-882f-a241b3990948" />
+
+</details>
+
+### Step 18: Confirming That Windows Rejected the Weak Password
+
+After submitting the weak password, Windows displayed an error message:
+
+**"Unable to update the password. The value provided for the new password does not meet the length, complexity, or history requirements of the domain."**
+
+This confirmed that Windows rejected the password because it did not meet the security requirements.
+
+I clicked **OK** to close the message.
+
+ Password requirements help prevent employees from using simple passwords that attackers could easily guess.
+
+<details>
+<summary>View Image</summary>
+
+<img width="950" height="591" alt="image" src="https://github.com/user-attachments/assets/886ea969-d3ab-464d-9e9d-4a062753ef6b" />
+
+</details>
+
+### Step 19: Testing a Password Without Uppercase Letters or Numbers
+
+Next, I tested another password to check whether Windows was enforcing password complexity requirements.
+
+I entered the existing password and attempted to use **`duration-unstamped`** as the new password.
+
+Although this password was longer than 10 characters, it did not contain uppercase letters or numbers.
+
+This test helped me understand that password length alone does not guarantee that a password meets company security requirements.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1414" height="546" alt="image" src="https://github.com/user-attachments/assets/aab30c75-99e5-47d5-bdd9-141fcc88ad9a" />
+
+</details>
+
+### Step 20: Confirming That the Second Password Was Rejected
+
+After submitting `duration-unstamped`, Windows displayed another error message explaining that the password did not meet the required length, complexity, or history settings.
+
+This showed that Windows was enforcing additional password requirements beyond password length.
+
+I clicked **OK** to close the error message.
+
+Password complexity rules can help reduce the risk of employees choosing easily guessed passwords.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1415" height="652" alt="image" src="https://github.com/user-attachments/assets/70b22169-be18-4cac-b27c-1e81c2a4bc9f" />
+
+</details>
+
+### Step 21: Entering a Password That Met the Security Requirements
+
+Next, I attempted to change Morgan's password to **`DURATION-unstamped-11`.**
+
+This password included:
+
+- Uppercase letters
+- Lowercase letters
+- Numbers
+- Special characters
+- More than 10 characters
+
+I entered the existing password and typed the new password into the **New password** and **Confirm password** fields.
+
+This test was intended to verify that Windows would accept a password that met the configured security requirements.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1489" height="658" alt="image" src="https://github.com/user-attachments/assets/e4db3ad8-bd47-48cb-bd57-988c37ec81d3" />
+
+</details>
+
+
+The password change was successful:
+
+<details>
+<summary>View Image</summary>
+
+<img width="1319" height="689" alt="image" src="https://github.com/user-attachments/assets/c449eab3-c0e9-487c-b5d2-f6c8640e909c" />
+</details>
+
+### Step 22: Opening the Password Change Screen Again
+
+After testing the new password, I returned to the Windows security options using **Ctrl + Alt + Delete**.
+
+I selected **Change a password** again to test the password history policy.
+
+The password history policy had previously been configured to remember the last **10 passwords**.
+
+This setting was designed to prevent users from immediately reusing their previous passwords.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1508" height="771" alt="image" src="https://github.com/user-attachments/assets/f3f391be-b73d-4387-ae95-13b2cae65aa1" />
+
+</details>
+
+### Step 23: Selecting Change a Password
+
+On the Windows security screen, I selected **Change a password**.
+
+This opened the password change form again.
+
+I used this screen to test whether Windows would allow the same password to be reused.
+
+Reusing passwords can weaken account security, especially when an old password has been exposed.
+
+<details>
+<summary>View Image</summary>
+
+<img width="1345" height="665" alt="image" src="https://github.com/user-attachments/assets/5c0bbbd6-19d4-48b4-9269-3d4547481359" />
+</details>
+
+### Step 24: Attempting to Reuse the Same Password
+
+I entered `DURATION-unstamped-11` as the existing password and attempted to enter the same value into the new password fields.
+
+The purpose was to test whether Windows would prevent a user from reusing a recently used password.
+
+Because the password history setting remembered the previous 10 passwords, the same password should not have been accepted again.
+
+<details>
+<summary>View Image</summary>
+
+<img width="901" height="411" alt="image" src="https://github.com/user-attachments/assets/60c2d073-23a8-4995-b7b6-3bcc25af8ba0" />
+
+</details>
+
+### Step 25: Confirming That Password Reuse Was Blocked
+
+After attempting to reuse the password, Windows displayed an error message:
+
+**"Unable to update the password. The value provided for the new password does not meet the length, complexity, or history requirements of the domain."**
+
+This result was consistent with the password history restriction because the new password matched the existing password.
+
+Password history policies help prevent users from repeatedly choosing the same password.
+
+<details>
+<summary>View Image</summary>
+
+<img width="831" height="404" alt="image" src="https://github.com/user-attachments/assets/200569f9-2727-4586-a74f-9a80179a8a0e" />
+
+</details>
+
+### Step 26: Completing the Security Policy Knowledge Check
+
+At the end of the lab, I answered a question asking why it was important to test whether security changes worked as expected.
+
+I selected:
+
+**"It's easy to make a mistake."**
+
+The lab displayed a green **Correct!** message.
+
+This helped me understand that configuring security settings is only part of the process. IT professionals must also test their changes to make sure the settings work correctly.
+
+<details>
+<summary>View Image</summary>
+
+<img width="462" height="294" alt="image" src="https://github.com/user-attachments/assets/5577ea0b-0828-4027-890d-cd08989f2cbf" />
+
+</details>
+
+
+
+

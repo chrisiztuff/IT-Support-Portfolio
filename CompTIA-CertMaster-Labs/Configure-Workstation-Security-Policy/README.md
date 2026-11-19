@@ -4,7 +4,11 @@
 ## Live recorded unlisted video of me doing the guided lab:
 https://www.youtube.com/watch?v=uE_L0u2_OPE&list=PLhUaWIVkfPbpP9TSJuC9po715y6H1ul6G&index=43
 
+## Project Description
 
+In this guided lab, I practiced configuring security policies on a Windows workstation using Local Security Policy. I changed password requirements, configured account lockout settings, and improved login security to help protect employee accounts from unauthorized access.
+
+I also tested different passwords to make sure the security policies were working correctly. The screenshots below come from my recorded training lab and show the steps I completed.
 
 ### Step 1: Signing In to the Windows Workstation
 
@@ -446,5 +450,5 @@ This helped me understand that configuring security settings is only part of the
 </details>
 
 
-
-
+# What I Learned
+I learned how to configure Windows security policies, including setting password history to 10 passwords, maximum password age to 30 days, minimum password age to 7 days, and minimum password length to 10 characters. I also configured an account lockout threshold of 5 failed login attempts with a 30-minute lockout duration and enabled the policy to hide the last signed-in username. Finally, I tested weak passwords, password complexity requirements, and password reuse restrictions to verify that the security settings were working correctly.

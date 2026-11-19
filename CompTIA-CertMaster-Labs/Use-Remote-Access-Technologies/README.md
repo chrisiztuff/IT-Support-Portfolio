@@ -1,4 +1,4 @@
-# Manage a Support Ticket
+# Use Remote Access Technologies
 
 **CompTIA CertMaster Guided Lab | Windows 10 | Ubuntu Linux | SSH | PowerShell**
 
